@@ -18,7 +18,7 @@ void swap(int *a, int *b)
   int auxA = *a;
   *a = *b;
   *b = auxA;
-  /*ezzzzzzzzzzz
+  
 }
 
 /*
