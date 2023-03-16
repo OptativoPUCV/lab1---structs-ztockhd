@@ -360,3 +360,20 @@ Thu 16 Mar 2023 12:47:23 AM UTC:
  tests:  7|1
 total_score: 60/70
 179c3f6
+Thu 16 Mar 2023 12:51:38 AM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:136:13: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+  136 |   c[0] = (a1,a2) + (b1,b2);
+      |             ^
+exercises.c:136:23: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+  136 |   c[0] = (a1,a2) + (b1,b2);
+      |                       ^
+exercises.c:136:10: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  136 |   c[0] = (a1,a2) + (b1,b2);
+      |          ^
+cc1: all warnings being treated as errors
+Compilation failed
+165855a
